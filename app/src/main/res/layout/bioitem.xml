@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#EEFFFFFF"
+    app:cardCornerRadius="5dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/bio_photo"
+            android:src="@drawable/pria"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:id="@+id/bio_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bio_photo"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="ID - Nama"/>
+
+        <TextView
+            android:id="@+id/bio_kelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bio_photo"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/bio_nama"
+            android:textSize="12sp"
+            tools:text="Tanggal Lahir - Kelamin"/>
+
+        <TextView
+            android:id="@+id/bio_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bio_photo"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/bio_kelamin"
+            android:textSize="12sp"
+            tools:text="Alamat"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

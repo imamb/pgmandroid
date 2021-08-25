@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                 progressDialog.isIndeterminate = true
                 progressDialog.setMessage("Loading...")
                 progressDialog.show()
-                val intent = Intent (this,Biodata::class.java)
+                val intent = Intent (this,ListBiodata::class.java)
                 startActivity(intent)
                 finish()
             }else{
