@@ -18,12 +18,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ListBiodata"/>
+        <activity android:name=".DetailBiodata"
+            android:parentActivityName=".ListBiodata">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ListBiodata" />
+        </activity>
         <activity android:name=".Biodata"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".ListBiodata">
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".ListBiodata" />
 
         </activity>
     </application>
